@@ -1,0 +1,44 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: ;
+    color: ;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+   padding: 0px 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#showcase{
+    background-image: url(/img/showcase.jpg);
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#topbar{
+    padding: 10px 0;
+    
+}
+hr{
+    border: 0;
+    height: 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+#topbar .logo{
+    float: left;
+    background-color: rgba(96, 228, 114, 0.4);
+}
+
+#topbar .item{
+    float: right;
+    background-color: rgba(228, 149, 96, 0.596);
+    display: flex;
+}
