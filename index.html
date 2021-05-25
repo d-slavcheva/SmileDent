@@ -11,27 +11,27 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="icon" href="img/tooth-icon.png" sizes="16x16 32x32" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section id="showcase">
-        <div class="container clearfix">
+        <div class="container">
             <div id="topbar">
                 <div class="logo">
                     <img src="img/dentalcare-logo-white.png" alt="">
                 </div>
                 <div class="items">
-                    <div class="item">
+                    <div class="tile">
                         <i class="fal fa-clock fa-3x"></i>
                         <div>Monday - Friday 08:00-19:00<br> <span class="transperant">Saturday and Sunday -
                                 CLOSED</span> </div>
                     </div>
-                    <div class="item">
+                    <div class="tile">
                         <i class="fal fa-phone-alt fa-3x"></i>
                         <div>+0800 2336 7811<br><span class="transperant">office@dentalcare.com</span></div>
                     </div>
-                    <div class="item">
+                    <div class="tile">
                         <i class="fal fa-map-marker-alt fa-3x"></i>
                         <div>Madison Avenue 7<br><span class="transperant">New York, US</span></div>
                     </div>
@@ -40,20 +40,34 @@
         </div>
         <hr>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">about us</a></li>
-                    <ul>
-                        <li><a href="">General info</a></li>
-                        <li><a href="">Doctors profile</a></li>
-                        <li><a href="">Appointments</a></li>
-                    </ul>
-                    <li><a href="">servuces</a></li>
+            <nav id="mainnav">
+                <ul class="main-menu">
+                    <li><a href="" class="active">home</a></li>
+                    <li><a href="">about us</a>
+                        <ul class="sub-menu">
+                            <li><i class="far fa-angle-right"></i><a href="">General info</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">Doctors profile</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">Appointments</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">General info</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">Doctors profile</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">Appointments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">services</a>
+                        <ul class="sub-menu">
+                            <li><i class="far fa-angle-right"></i><a href="">Services</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="">Procedures</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">get a free quote</a></li>
                     <li><a href="">news</a></li>
                 </ul>
-                <div class="navsocial"></div>
+                <ul class="social-menu">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
             </nav>
 
             <div class="caroucel">
@@ -64,7 +78,7 @@
                     illo quibusdam corporis modi adipisci.</p>
                 <button>view our team</button>
                 <button>book a visut</button>
-                </div>
+            </div>
         </div>
 
     </section>
