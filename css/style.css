@@ -81,30 +81,59 @@ hr {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
+}
+
+#mainnav .main-menu a {
+  padding-bottom: 1rem;
+}
+
+#mainnav .main-menu li {
   position: relative;
+  padding-bottom: 1rem;
+}
+
+.sub-menu li > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 0.8rem;
+ }
+
+.sub-menu i {
+  margin: 0 10px;
+  color: #ccc;
 }
 
 .sub-menu {
-  display: none;
-  background-color: #444;
-  margin-top: 1rem;
   position: absolute;
-  top: 1rem;
-  font-size: 0.8rem;
-  padding: 1rem;
-  color: #bbb;
-}
-.sub-menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 3rem 0.5rem 0.5rem;
-  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  width: 180%;
+  padding: 0;
+  border-top: 1px solid var(--accent-color);
+  padding-top: 1rem;
+  background-color: #444;
+  display: none;
+  
 }
 
-li:hover > .sub-menu {
+.sub-menu2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 100%;
+  width: 100%;
+  padding: 0;
   border-top: 1px solid var(--accent-color);
+  padding-top: 1rem;
+  background-color: #444;
+  display: none;
+  
+}
+
+#mainnav .main-menu li:hover > .sub-menu,
+.sub-menu > li:hover > .sub-menu2 {
   display: block;
-  transition: 0.2s;
 }
 
 .main-menu > li {
@@ -112,7 +141,7 @@ li:hover > .sub-menu {
 }
 
 .main-menu > li > a {
-  padding-bottom: 0.8rem;
+  /* padding-bottom: 0.8rem; */
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -122,12 +151,11 @@ li:hover > .sub-menu {
 
 li a:hover {
   color: var(--accent-color);
-  transition: ease;
-  transition-duration: 0.3s;
+  transition: ease 0.3s;
 }
 
 .active {
-  border-bottom: var(--accent-color) 3px solid;
+  border-bottom: var(--accent-color) 3px solid !important;
 }
 
 .social-menu {
