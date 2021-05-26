@@ -89,7 +89,8 @@ hr {
 
 #mainnav .main-menu li {
   position: relative;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .sub-menu li > a {
@@ -114,21 +115,14 @@ hr {
   padding-top: 1rem;
   background-color: #444;
   display: none;
-  
+
 }
 
-.sub-menu2 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+.sub-menu ul.sub-menu {
+  top: 0;
   left: 100%;
   width: 100%;
-  padding: 0;
-  border-top: 1px solid var(--accent-color);
-  padding-top: 1rem;
-  background-color: #444;
-  display: none;
-  
+
 }
 
 #mainnav .main-menu li:hover > .sub-menu,
