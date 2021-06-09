@@ -23,11 +23,39 @@ li {
   margin: auto;
   padding: 0 10px;
 }
+
+.center{
+  text-align: center;
+}
+.text-accent{
+  color: var(--accent-color);
+  font-weight: 900;
+}
 .light {
   background-color: var(--accent-color);
 }
 .dark {
   background-color: var(--accent-color-dark);
+}
+
+.light2 {
+  background-color: rgba(0, 161, 190, 1);
+}
+
+.light3 {
+  background-color: rgba(0, 135, 170, 1);
+}
+
+.light4 {
+  background-color: rgba(0, 109, 149, 1);
+}
+
+.separator-small {
+  margin-top: 2rem;
+}
+
+.separator-large {
+  margin-top: 6rem;
 }
 
 .btn {
@@ -50,13 +78,72 @@ li {
   transition: ease 0.3s;
 }
 
+.btn.white {
+  color: #444;
+  background-color: #fff;
+}
+
+.btn.white:hover {
+  background-color: #ddd;
+  transition: ease 0.3s;
+}
+
+.roundbtn {
+  display: block;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .transperant {
   color: rgba(255, 255, 255, 0.7);
 }
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
 hr {
   border: 0;
   height: 0;
   border-bottom: 0.5px solid var(--transperantgray-color);
+}
+
+.hr-accent  {
+  width: 4rem;
+  margin: 0 auto;
+  font-weight: 900;
+  background-color: var(--accent-color);
+}
+
+
+p {
+  line-height: 1.8rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.middle {
+  color: var(--accent-color);
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #showcase {
@@ -64,7 +151,7 @@ hr {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 650px;
 }
 
 #topbar {
@@ -172,12 +259,12 @@ hr {
 #mainnav .social-menu {
   margin-left: auto;
 }
-#mainnav .social-menu a {
+.social-menu a {
   color: var(--accent-color);
   padding: 1rem;
 }
 
-#mainnav .social-menu {
+.social-menu {
   display: flex;
 }
 
@@ -237,8 +324,6 @@ hr {
 
 .carousel h2 {
   color: #fff;
-  font-size: 2rem;
-  line-height: 2.5rem;
 }
 
 .carousel p {
@@ -262,12 +347,229 @@ hr {
 
 .carousel-indicator.current-slide {
   /* background-color: rgba(255, 255, 255, 0.8); */
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 
 .is-hidden {
   display: none;
 }
+
+#services-team .services {
+  background: url(../img/backgroundSectionServices.jpg) no-repeat;
+  background-size: cover;
+}
+#services-team .services .services-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#services-team .services .service-card {
+  padding: 4rem 2rem;
+  color: #fff;
+  position: relative;
+}
+
+#services-team .services .service-card > .roundbtn {
+  position: absolute;
+  top: -36px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 2.5rem;
+  border: var(--accent-color-dark) 2px solid;
+  background-color: var(--accent-color-dark);
+}
+
+#services-team .services .service-card > .roundbtn:hover {
+  background-color: white;
+  color: var(--accent-color-dark);
+  transition: ease-in 0.3s;
+}
+
+ .two-columns {
+  display: flex;
+}
+
+#services-team hr{
+  margin-left: 0;
+}
+
+#services-team .services .two-columns > img {
+  height: 600px;
+  width: auto;
+}
+
+#team {
+  background-color: #eee;
+  margin: 0;
+}
+
+#team .four-columns {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+#team .four-columns .team-card {
+  margin-right: 1.5rem;
+}
+
+#team .four-columns .team-card .card-info {
+  padding: 1rem;
+  color: #fff;
+}
+
+#team .four-columns .team-card:last-child {
+  margin-right: 0;
+}
+
+#team .four-columns .team-card .img-conainer {
+  position: relative;
+}
+
+#team .img-conainer img {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+
+#team .four-columns .team-card .img-conainer:hover .overlay {
+  opacity: 0.7;
+}
+
+#team .four-columns .team-card .img-conainer:hover .middle {
+  opacity: 1;
+}
+
+#team .card-info {
+  position: relative;
+}
+
+#team .card-btn-cont {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0%;
+  transform: translate(0, -50%);
+  width: 100px;
+}
+
+#team .card-btn-cont > .roundbtn {
+  height: 42px;
+  width: 42px;
+  background-color: var(--accent-color);
+  border: var(--accent-color) 2px solid;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+}
+
+#team .card-btn-cont >.roundbtn:hover {
+  background-color: white;
+  color: var(--accent-color);
+  transition: ease-in 0.3s;
+}
+
+#team .social-menu-cards {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#team .social-menu-cards > .roundbtn {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: #fff 1px solid;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#team .social-menu-cards > .roundbtn:hover {
+  background-color: white;
+  border: var(--accent-color) 1px solid;
+  color: var(--accent-color);
+  transition: ease-in 0.3s;
+}
+
+.comments{
+  /* background-color: orange; */
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  
+
+}
+
+blockquote{
+  box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
+  margin: 0;
+  width: 50%;
+  
+}
+
+.client-img{
+  width: 116px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.signiture{
+  width: 116px;
+  height: auto;
+
+}
+
+blockquote .roundbtn {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: #fff 1px solid;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 5px;
+  position: absolute;
+  top: 120px;
+  left: 65px;
+  
+}
+
+blockquote .roundbtn:hover {
+  background-color:none;
+  border: var(--accent-color) 1px solid;
+  color: var(--accent-color);
+  transition: ease-in 0.3s;
+}
+blockquote p{
+  position: relative;
+  color: #fff;
+  padding-left:2rem;
+  
+ }
+
+.name{
+  font-weight: 900;
+}
+.quotes{
+  position: absolute;
+  top: -16px;
+  left: 16px;
+  opacity: .2;
+}
+
 @media only screen and (max-width: 992px) {
   #topbar {
     display: none;
