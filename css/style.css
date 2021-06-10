@@ -24,13 +24,14 @@ li {
   padding: 0 10px;
 }
 
-.center{
+.center {
   text-align: center;
 }
-.text-accent{
+.text-accent {
   color: var(--accent-color);
   font-weight: 900;
 }
+
 .light {
   background-color: var(--accent-color);
 }
@@ -102,6 +103,20 @@ li {
 h2 {
   font-size: 3.5rem;
   line-height: 4rem;
+  margin: 1.2rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 1000;
+  margin: 0.8rem 0;
+}
+
+h6 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: 1rem 0;
 }
 
 hr {
@@ -110,13 +125,12 @@ hr {
   border-bottom: 0.5px solid var(--transperantgray-color);
 }
 
-.hr-accent  {
+.hr-accent {
   width: 4rem;
   margin: 0 auto;
   font-weight: 900;
   background-color: var(--accent-color);
 }
-
 
 p {
   line-height: 1.8rem;
@@ -200,7 +214,8 @@ p {
   padding-bottom: 0.5rem;
 }
 
-#mainnav .sub-menu a {
+#mainnav .sub-menu a,
+#contact-details a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 0.8rem;
@@ -354,22 +369,22 @@ p {
   display: none;
 }
 
-#services-team .services {
+#offers-team .offers {
   background: url(../img/backgroundSectionServices.jpg) no-repeat;
   background-size: cover;
 }
-#services-team .services .services-cards {
+#offers-team .offers .offers-cards {
   display: flex;
   justify-content: space-evenly;
 }
 
-#services-team .services .service-card {
+#offers-team .offers .offer-card {
   padding: 4rem 2rem;
   color: #fff;
   position: relative;
 }
 
-#services-team .services .service-card > .roundbtn {
+#offers-team .offers .offer-card > .roundbtn {
   position: absolute;
   top: -36px;
   width: 80px;
@@ -380,23 +395,31 @@ p {
   background-color: var(--accent-color-dark);
 }
 
-#services-team .services .service-card > .roundbtn:hover {
+#offers-team .offers .offer-card > .roundbtn:hover {
   background-color: white;
   color: var(--accent-color-dark);
   transition: ease-in 0.3s;
 }
 
- .two-columns {
+.two-columns {
   display: flex;
 }
 
-#services-team hr{
+#offers-team hr {
   margin-left: 0;
 }
 
-#services-team .services .two-columns > img {
-  height: 600px;
+#offers-team .offers .two-columns > img {
+  height: 500px;
   width: auto;
+}
+
+.two-columns p img {
+  margin-top: 50px;
+}
+.two-columns p {
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 #team {
@@ -411,24 +434,24 @@ p {
   padding: 100px 0;
 }
 
-#team .four-columns .team-card {
+.card {
   margin-right: 1.5rem;
 }
 
-#team .four-columns .team-card .card-info {
+.card .card-info {
   padding: 1rem;
   color: #fff;
 }
 
-#team .four-columns .team-card:last-child {
+#offers-team .card:last-child {
   margin-right: 0;
 }
 
-#team .four-columns .team-card .img-conainer {
+.card .img-conainer {
   position: relative;
 }
 
-#team .img-conainer img {
+.img-conainer img {
   display: block;
   max-width: 350px;
   width: 100%;
@@ -436,20 +459,19 @@ p {
   transition: 0.5s ease;
 }
 
-
-#team .four-columns .team-card .img-conainer:hover .overlay {
+.card .img-conainer:hover .overlay {
   opacity: 0.7;
 }
 
-#team .four-columns .team-card .img-conainer:hover .middle {
+.card .img-conainer:hover .middle {
   opacity: 1;
 }
 
-#team .card-info {
+.card-info {
   position: relative;
 }
 
-#team .card-btn-cont {
+.card-btn-cont {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -458,7 +480,7 @@ p {
   width: 100px;
 }
 
-#team .card-btn-cont > .roundbtn {
+.card-btn-cont > .roundbtn {
   height: 42px;
   width: 42px;
   background-color: var(--accent-color);
@@ -468,7 +490,7 @@ p {
   font-size: 20px;
 }
 
-#team .card-btn-cont >.roundbtn:hover {
+.card-btn-cont > .roundbtn:hover {
   background-color: white;
   color: var(--accent-color);
   transition: ease-in 0.3s;
@@ -498,35 +520,31 @@ p {
   transition: ease-in 0.3s;
 }
 
-.comments{
+.comments {
   /* background-color: orange; */
   display: flex;
   justify-content: flex-start;
   overflow-x: hidden;
   flex-wrap: wrap;
-  
-
 }
 
-blockquote{
+blockquote {
   box-sizing: border-box;
   padding: 2rem;
   position: relative;
   margin: 0;
   width: 50%;
-  
 }
 
-.client-img{
+.client-img {
   width: 116px;
   height: auto;
   border-radius: 50%;
 }
 
-.signiture{
+.signiture {
   width: 116px;
   height: auto;
-
 }
 
 blockquote .roundbtn {
@@ -544,30 +562,129 @@ blockquote .roundbtn {
   position: absolute;
   top: 120px;
   left: 65px;
-  
 }
 
 blockquote .roundbtn:hover {
-  background-color:none;
+  background-color: none;
   border: var(--accent-color) 1px solid;
   color: var(--accent-color);
   transition: ease-in 0.3s;
 }
-blockquote p{
+blockquote p {
   position: relative;
   color: #fff;
-  padding-left:2rem;
-  
- }
-
-.name{
-  font-weight: 900;
+  padding-left: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
-.quotes{
+
+.name {
+  font-weight: 900;
+  margin: 1rem;
+  color: #fff;
+}
+.quotes {
   position: absolute;
   top: -16px;
   left: 16px;
-  opacity: .2;
+  opacity: 0.2;
+}
+
+.contact-us {
+  padding: 2rem;
+  display: flex;
+  color: #fff;
+}
+
+.contact-us a {
+  margin-left: auto;
+}
+#services .card-info {
+  color: black;
+}
+.service {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 2rem;
+  /* grid-gap: .5rem; */
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+#contact-details {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-data {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0rem 3rem;
+  width: 350px;
+  height: 480px;
+}
+
+#contact-details i{
+  font-size: 20px;
+  margin: 0 1rem 1rem 0;
+}
+
+#contact-details address{
+  font-style: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+#contact-details h3{
+  margin: 1.5rem;
+
+}
+
+th {
+  padding: .8rem 1rem .8rem 0rem;
+  text-align: left;
+  border-bottom: rgba(0, 161, 190, 0.4) solid 1px;
+  
+}
+th:last-child{
+  font-weight: normal;
+}
+
+footer {
+  background-image: url(/img/shutterstock_272306351-dark.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.socket {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socket p {
+  font-size: 10px;
+}
+
+.socket img {
+  width: 100px;
+  height: auto;
+  margin: 0 1rem;
+}
+.socket .btn.white {
+  font-size: 10px;
+  padding: 5px 40px;
 }
 
 @media only screen and (max-width: 992px) {
