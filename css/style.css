@@ -129,7 +129,7 @@ hr {
   width: 4rem;
   margin: 0 auto;
   font-weight: 900;
-  background-color: var(--accent-color);
+  
 }
 
 p {
@@ -401,7 +401,7 @@ p {
   transition: ease-in 0.3s;
 }
 
-.two-columns {
+.columns {
   display: flex;
 }
 
@@ -409,15 +409,15 @@ p {
   margin-left: 0;
 }
 
-#offers-team .offers .two-columns > img {
+#offers-team .offers .columns > img {
   height: 500px;
   width: auto;
 }
 
-.two-columns p img {
+#offers-team .columns p img {
   margin-top: 50px;
 }
-.two-columns p {
+#offers-team .columns p {
   font-size: 1.3rem;
   line-height: 2rem;
 }
@@ -496,12 +496,12 @@ p {
   transition: ease-in 0.3s;
 }
 
-#team .social-menu-cards {
+.social-menu-cards {
   display: flex;
   justify-content: flex-end;
 }
 
-#team .social-menu-cards > .roundbtn {
+ .social-menu-cards > .roundbtn {
   display: block;
   height: 30px;
   width: 30px;
@@ -513,7 +513,7 @@ p {
   margin: 5px;
 }
 
-#team .social-menu-cards > .roundbtn:hover {
+ .social-menu-cards > .roundbtn:hover {
   background-color: white;
   border: var(--accent-color) 1px solid;
   color: var(--accent-color);
@@ -663,7 +663,41 @@ footer {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+   color: #fff;
+  
+}
+footer p{
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer h5{
+  margin: 0 0;
+  font-weight: 600;
+}
+
+footer a img{
+  width: auto;
+  height: 100%;
+  margin: 0  3rem;
+}
+
+footer .hr-accent.dark{
+  margin-left: 0;
+  margin-bottom: 1rem;
+  height: 2px;
+}
+
+.columns .icon{
+  margin-right: 1.5rem;
 }
 
 .socket {
