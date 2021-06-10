@@ -161,7 +161,7 @@ p {
 }
 
 #showcase {
-  background-image: url(/img/showcase.jpg);
+  background-image: url(../img/showcase.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -659,7 +659,7 @@ th:last-child{
 }
 
 footer {
-  background-image: url(/img/shutterstock_272306351-dark.jpg);
+  background-image: url(../img/shutterstock_272306351-dark.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
