@@ -605,22 +605,24 @@ blockquote p {
 .service {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  margin-top: 2rem;
-  /* grid-gap: .5rem; */
-}
+  margin: 3rem 0;
+ }
 
-iframe {
-  margin: 0;
-  padding: 0;
-}
+
 
 #contact-details {
   position: relative;
   color: #fff;
   font-size: 14px;
+  height: 480px;
 }
 
-.contact-data {
+#contact-details iframe {
+  margin: 0;
+  padding: 0;
+}
+
+#contact-details .contact-data {
   position: absolute;
   top: 0;
   margin: 0;
@@ -696,14 +698,18 @@ footer .hr-accent.dark{
   height: 2px;
 }
 
-.columns .icon{
-  margin-right: 1.5rem;
+footer .columns:nth-child(2){
+  margin-left: 2rem;
+}
+
+footer .columns .icon{
+  margin-right: 1rem;
 }
 
 .socket {
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -712,9 +718,9 @@ footer .hr-accent.dark{
 }
 
 .socket img {
-  width: 100px;
-  height: auto;
-  margin: 0 1rem;
+  width: auto;
+  max-height: 40px;
+  margin: 1rem;
 }
 .socket .btn.white {
   font-size: 10px;
