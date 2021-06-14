@@ -22,7 +22,8 @@ li {
   max-width: 1170px;
   margin: auto;
   padding: 0 10px;
-  /* background-color: rgba(0, 161, 190, 0.4); */
+  /* background-color: rgba(0, 161, 190, 0.4);
+  border: 1px solid black; */
 }
 
 .center {
@@ -192,7 +193,7 @@ p {
 
 .card-info {
   position: relative;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   color: #fff;
 }
 
@@ -437,8 +438,9 @@ p {
 }
 
 #offers-team .columns-nowrap > img {
-  width: 450px;
+  max-width: 400px;
   height: fit-content;
+  
 }
 
 #offers-team .columns p img {
@@ -469,7 +471,7 @@ p {
 
 .img-container img {
   display: block;
-  max-width: 500px;
+  /* max-width: 500px; */
   width: 100%;
   height: auto;
   transition: 0.5s ease;
@@ -596,8 +598,7 @@ p {
 }
 
 .contact-us {
-  padding: 2rem;
-  color: #fff;
+   color: #fff;
 }
 
 .contact-us a {
@@ -769,7 +770,7 @@ footer .columns .icon {
   }
 
   #testimonials .client-photo img {
-    width: 300px;
+    width:290px;
     height: auto;
     border-radius: 50%;
   }
