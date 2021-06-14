@@ -167,10 +167,8 @@ p {
 }
 
 .columns-nowrap {
-   display: flex;
-  
+  display: flex;
 }
-
 
 .columns-item25 {
   position: relative;
@@ -183,8 +181,6 @@ p {
   box-sizing: border-box;
   flex: 1 1 50%;
 }
-
-
 
 .card-info {
   position: relative;
@@ -426,9 +422,9 @@ p {
   margin-left: 0;
 }
 
-#offers-team .columns > img {
-  height: 500px;
-  width: auto;
+#offers-team .columns-nowrap > img {
+  width: 450px;
+  height: fit-content;
 }
 
 #offers-team .columns p img {
@@ -439,7 +435,7 @@ p {
   line-height: 2rem;
 }
 
-#team {
+.bg-grau {
   background-color: #eee;
   margin: 0;
   padding: 5rem 0;
@@ -519,15 +515,10 @@ p {
   transition: ease-in 0.3s;
 }
 
-
-
-
-
-#testimonials .client-photo{
+#testimonials .client-photo {
   position: relative;
   line-height: 0;
 }
-
 
 #testimonials .client-photo img {
   width: 116px;
@@ -555,8 +546,6 @@ p {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  
- 
 }
 
 #testimonials .roundbtn:hover {
@@ -574,8 +563,7 @@ p {
 }
 
 #testimonials .columns-nowrap {
- padding: 2rem;
- 
+  padding: 2rem;
 }
 
 .name {
@@ -624,8 +612,8 @@ p {
   position: absolute;
   top: 0;
   margin: 0;
-  padding: 0rem 3rem;
-  width: 350px;
+  padding: 0rem 2.5rem;
+  max-width: 350px;
   height: 480px;
 }
 
@@ -680,7 +668,7 @@ footer h5 {
 }
 
 footer a img {
-  max-width	: auto;
+  max-width: auto;
   height: 100%;
   padding-right: 1rem;
 }
@@ -726,6 +714,8 @@ footer .columns .icon {
   #topbar {
     display: none;
   }
+
+
 }
 /* Medium devices - tablets */
 @media only screen and (max-width: 768px) {
@@ -758,32 +748,25 @@ footer .columns .icon {
   }
 
   .service {
-    
     grid-template-columns: repeat(2, auto);
-   
   }
 
   #testimonials .client-photo img {
     width: 300px;
     height: auto;
     border-radius: 50%;
-
   }
 
   #testimonials .roundbtn {
     top: 310px;
     left: 50%;
   }
-  
-  
-  .columns-nowrap{
+
+  .columns-nowrap {
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    
-    
+    justify-content: center;
   }
-
 }
 
 /* Small devices - landscape phone */
@@ -794,18 +777,19 @@ footer .columns .icon {
     margin: 0;
     justify-content: center;
   }
-  
- footer{
-   text-align: center;
- }
 
- footer .columns:nth-child(2) {
-  margin-left: 0;
-}
-hr{
- 
-  margin:1rem  auto!important ;
-}
+  .separator-large {
+    margin-top: 3rem;
+  }
 
+  footer {
+    text-align: center;
+  }
 
+  footer .columns:nth-child(2) {
+    margin-left: 0;
+  }
+  hr {
+    margin: 1rem auto !important ;
+  }
 }
