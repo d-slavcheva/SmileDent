@@ -390,7 +390,7 @@ p {
   justify-content: center;
   z-index: 2;
   position: absolute;
-  bottom: -2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0);
   
