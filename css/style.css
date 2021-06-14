@@ -66,6 +66,7 @@ li {
 
 .btn {
   padding: 1rem 2rem;
+  margin: 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -145,13 +146,12 @@ p {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  
 }
 
 .columns-nowrap {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+   gap: 1rem;
 }
 
 .columns-item25 {
@@ -324,7 +324,7 @@ p {
 .carousel {
   position: relative;
   margin: 0 auto;
-  height: 500px;
+  height: 400px;
 }
 
 .carousel-button {
@@ -601,6 +601,7 @@ p {
 
 .contact-us {
   color: #fff;
+  align-items: center;
 }
 
 .contact-us a {
@@ -678,7 +679,8 @@ footer p {
 footer a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
+  height: 100%;
+  line-height: 0;
 }
 
 footer h5 {
@@ -686,10 +688,8 @@ footer h5 {
   font-weight: 600;
 }
 
-footer a img {
-  max-width: auto;
-  height: 100%;
-  padding-right: 1rem;
+footer img {
+height: 100%;
 }
 
 footer .columns:nth-child(2) {
@@ -753,7 +753,7 @@ footer .columns .icon {
   }
 
   h6 {
-    font-size: 0.8 rem;
+    font-size: 1rem;
     line-height: 1.4rem;
     margin: 0.5rem 0;
   }
@@ -809,24 +809,16 @@ footer .columns .icon {
 /* Small devices - landscape phone */
 
 @media only screen and (max-width: 576px) {
-  body {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  p {
-    font-size: 14px !important;
-    line-height: 20px !important;
-  }
-
   h2 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 0.5rem 0;
   }
-  .columns {
+
+   .columns {
     flex-direction: column;
     margin: 0;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     text-align: center;
   }
