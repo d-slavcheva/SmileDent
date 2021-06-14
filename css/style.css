@@ -23,7 +23,7 @@ li {
   margin: auto;
   padding: 0 10px;
   /* background-color: rgba(0, 161, 190, 0.4);
-  border: 1px solid black; */
+  border: 1px solid black;  */
 }
 
 .center {
@@ -70,8 +70,7 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
- 
-  }
+}
 
 .btn.light:hover {
   background-color: #007080;
@@ -193,7 +192,7 @@ p {
 
 .card-info {
   position: relative;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem;
   color: #fff;
 }
 
@@ -423,8 +422,12 @@ p {
   background-color: var(--accent-color-dark);
 }
 
-#offers-team .columns{
+#offers-team .columns {
   align-items: stretch;
+}
+
+#offers-team .card-info {
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 #offers-team .columns-item25 > .roundbtn:hover {
@@ -440,7 +443,6 @@ p {
 #offers-team .columns-nowrap > img {
   max-width: 400px;
   height: fit-content;
-  
 }
 
 #offers-team .columns p img {
@@ -598,7 +600,7 @@ p {
 }
 
 .contact-us {
-   color: #fff;
+  color: #fff;
 }
 
 .contact-us a {
@@ -738,23 +740,31 @@ footer .columns .icon {
 /* Medium devices - tablets */
 @media only screen and (max-width: 768px) {
   h2 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     margin: 1rem 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  h6 {
+    font-size: 0.8 rem;
+    line-height: 1.4rem;
+    margin: 0.5rem 0;
   }
 
   #mainnav {
     flex-direction: column;
   }
+
   .social-menu {
     margin-left: 0px !important;
     padding-left: 0px !important;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    margin: 1rem 0;
   }
 
   .columns-item25 {
@@ -770,9 +780,7 @@ footer .columns .icon {
   }
 
   #testimonials .client-photo img {
-    width:290px;
-    height: auto;
-    border-radius: 50%;
+    width: 300px;
   }
 
   #testimonials .roundbtn {
@@ -801,6 +809,20 @@ footer .columns .icon {
 /* Small devices - landscape phone */
 
 @media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0.5rem 0;
+  }
   .columns {
     flex-direction: column;
     margin: 0;
@@ -809,11 +831,32 @@ footer .columns .icon {
     text-align: center;
   }
 
+  .bg-grau .columns {
+    gap: none;
+  }
   .separator-large {
     margin-top: 3rem;
   }
+  .card-info {
+    padding: 1rem;
+  }
 
+  #testimonials .client-photo img {
+    width: 250px;
+  }
+
+  #testimonials .roundbtn {
+    top: 250px;
+  }
+  #testimonials p {
+    padding: 0;
+  }
+
+  #offers-team .columns-nowrap > img {
+    max-width: 350px;
+  }
   .service {
     grid-template-columns: repeat(1, auto);
+    gap: 0;
   }
 }
