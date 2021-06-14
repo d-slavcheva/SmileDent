@@ -67,12 +67,10 @@ li {
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
-  margin: 1rem 1rem 1rem 0;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-}
+ 
+  }
 
 .btn.light:hover {
   background-color: #007080;
@@ -137,11 +135,35 @@ h6 {
   border: 0;
   border-bottom: 3px solid var(--accent-color-dark);
   width: 4rem;
-  margin-left:0 ;
+  margin-left: 0;
 }
 
 p {
   line-height: 1.8rem;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.columns-nowrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.columns-item25 {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 25%;
+}
+
+.columns-item50 {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 50%;
 }
 
 .overlay {
@@ -168,30 +190,9 @@ p {
   text-align: center;
 }
 
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.columns-nowrap {
-  display: flex;
-}
-
-.columns-item25 {
-  position: relative;
-  box-sizing: border-box;
-  flex: 1 1 25%;
-}
-
-.columns-item50 {
-  position: relative;
-  box-sizing: border-box;
-  flex: 1 1 50%;
-}
-
 .card-info {
   position: relative;
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem;
   color: #fff;
 }
 
@@ -230,6 +231,7 @@ p {
 #mainnav {
   display: flex;
   justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 #mainnav .main-menu {
@@ -237,6 +239,7 @@ p {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
+  overflow-x: hidden;
 }
 
 #mainnav .main-menu a {
@@ -419,6 +422,10 @@ p {
   background-color: var(--accent-color-dark);
 }
 
+#offers-team .columns{
+  align-items: stretch;
+}
+
 #offers-team .columns-item25 > .roundbtn:hover {
   background-color: white;
   color: var(--accent-color-dark);
@@ -448,9 +455,12 @@ p {
   padding: 5rem 0;
 }
 
-.card {
-  padding-right: 1.5rem;
-  padding-bottom: 1.5rem;
+.bg-grau .columns {
+  gap: 1rem;
+}
+
+.bg-grau .columns .columns-item25 {
+  flex: 1 1 20%;
 }
 
 .img-container {
@@ -587,7 +597,6 @@ p {
 
 .contact-us {
   padding: 2rem;
-  display: flex;
   color: #fff;
 }
 
@@ -600,7 +609,7 @@ p {
 .service {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  margin: 3rem 0;
+  gap: 2rem;
 }
 
 #contact-details {
@@ -780,10 +789,9 @@ footer .columns .icon {
     text-align: center;
   }
 
-  footer .columns-item50 .columns {
-    margin: 2rem auto;
+  footer .hr-accent-dark {
+    margin: 10px auto;
   }
-
   footer .columns:nth-child(2) {
     margin-left: 0;
   }
@@ -796,9 +804,15 @@ footer .columns .icon {
     flex-direction: column;
     margin: 0;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .separator-large {
     margin-top: 3rem;
+  }
+
+  .service {
+    grid-template-columns: repeat(1, auto);
   }
 }
