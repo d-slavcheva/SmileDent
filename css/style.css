@@ -22,8 +22,8 @@ li {
   max-width: 1170px;
   margin: auto;
   padding: 0 10px;
-  /* background-color: rgba(0, 161, 190, 0.4);
-  border: 1px solid black;  */
+  /* background-color: rgba(0, 161, 190, 0.4); */
+  /* border: 1px solid black;  */
 }
 
 .center {
@@ -66,7 +66,6 @@ li {
 
 .btn {
   padding: 1rem 2rem;
-  margin: 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -146,12 +145,11 @@ p {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .columns-nowrap {
   display: flex;
-   gap: 1rem;
+  gap: 1rem;
 }
 
 .columns-item25 {
@@ -196,6 +194,10 @@ p {
   color: #fff;
 }
 
+.border {
+  border: 0.5px solid black;
+}
+
 #showcase {
   background-image: url(../img/showcase.jpg);
   background-position: center top;
@@ -205,7 +207,7 @@ p {
 }
 
 #topbar {
-  padding: 1.1rem 0;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -323,9 +325,8 @@ p {
 
 .carousel {
   position: relative;
-  margin: 0 auto;
-  height: 400px;
-  /* border: 1px solid black; */
+  /* margin: 0 auto; */
+  height: 60vh;
 }
 
 .carousel-button {
@@ -342,38 +343,37 @@ p {
 
 .carousel-button-left {
   left: 0rem;
+  z-index: 2;
 }
 
 .carousel-button-right {
   right: 0rem;
+  z-index: 2;
 }
-/* div */
-.carousel-track-container {
-  width: 70%;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
-/* ul */
+
 .carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
   position: relative;
-  padding: 0;
-  margin: 0 0 2rem 0;
-  height: 100%;
   transition: transform 0.8s ease;
+  /* border: 1px solid salmon; */
+  max-width: 70%;
+  height: 100%;
+
 }
 
-/* li */
+.carousel-track > *{
+  display: none;
+}
+
+.current-slide{
+  display: inline;
+}
+
 .carousel-slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.carousel-slide .two-third-column {
-  width: 60%;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  /* border: 1px solid green; */
 }
 
 .carousel h2 {
@@ -393,7 +393,6 @@ p {
   bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0);
-  
 }
 .carousel-indicator {
   border-radius: 50%;
@@ -696,7 +695,7 @@ footer h5 {
 }
 
 footer img {
-height: 100%;
+  height: 100%;
 }
 
 footer .columns:nth-child(2) {
@@ -823,17 +822,12 @@ footer .columns .icon {
     margin: 0.5rem 0;
   }
 
-   .columns {
+  .columns {
     flex-direction: column;
     margin: 0;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  .carousel {
-      height: 500px;
-   
   }
 
   .bg-grau .columns {

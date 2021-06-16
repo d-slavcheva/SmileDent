@@ -14,10 +14,13 @@ slides.forEach(setSlidePosition);
 
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
-track.style.transform = 'translateX(-' + targetSlide.style.left +')';
+// track.style.transform = 'translateX(-' + targetSlide.style.left +')';
 currentSlide.classList.remove('current-slide');
 targetSlide.classList.add('current-slide');
+
 };
+
+
 
 const updateDots = (currentDot, targetDot) => { 
     currentDot.classList.remove('current-slide');
