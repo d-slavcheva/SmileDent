@@ -831,6 +831,10 @@ footer .columns .icon {
     margin: 0.5rem 0;
   }
 
+  .btn{
+    padding:16px;
+  }
+
   .columns {
     flex-direction: column;
     margin: 0;
