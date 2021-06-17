@@ -742,7 +742,6 @@ footer .columns .icon {
   .service {
     grid-template-columns: repeat(3, auto);
   }
-
 }
 /* Medium devices - tablets */
 @media only screen and (max-width: 768px) {
@@ -838,6 +837,10 @@ footer .columns .icon {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .carousel-track {
+    max-width: 100%;
   }
 
   .bg-grau .columns {
