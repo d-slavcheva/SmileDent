@@ -795,7 +795,7 @@ footer .columns .icon {
     top: 36px;
   }
 
-  #mainnav .burger:hover > *{
+  #mainnav .burger:hover > * {
     background-color: var(--accent-color);
   }
 
@@ -804,7 +804,7 @@ footer .columns .icon {
     overflow: visible;
     position: absolute;
     top: 71.4px;
-    left: -1px ;
+    left: -1px;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -814,10 +814,9 @@ footer .columns .icon {
     transition: transform 0.5s ease-in;
     transform: translate(-100%);
     padding-top: 60px;
-   
   }
-  #mainnav .sub-menu{
-    width: 	60%!important;
+  #mainnav .sub-menu {
+    width: 60% !important;
   }
 
   .nav-active {
@@ -839,14 +838,14 @@ footer .columns .icon {
 
   .toggle .line1 {
     transform: translateY(12px) rotate(-45deg);
-    background-color: var(--main-color)!important;
+    background-color: var(--main-color) !important;
   }
   .toggle .line2 {
     opacity: 0;
   }
   .toggle .line3 {
     transform: translateY(-12px) rotate(45deg);
-    background-color:var(--main-color)!important;
+    background-color: var(--main-color) !important;
   }
 
   #mainnav .main-menu li {
@@ -900,6 +899,7 @@ footer .columns .icon {
 
   .columns-item50 {
     flex: 1 1 100%;
+    padding: 1rem;
   }
 
   .service {
@@ -951,7 +951,9 @@ footer .columns .icon {
     line-height: 2rem;
     margin: 0.5rem 0;
   }
-
+  p {
+    margin: 0.8rem 0;
+  }
   .btn {
     padding: 16px;
   }
@@ -978,6 +980,10 @@ footer .columns .icon {
     padding: 1rem;
   }
 
+  .social-menu-cards {
+    justify-content: center;
+  }
+
   #testimonials .client-photo img {
     width: 250px;
   }
@@ -994,6 +1000,25 @@ footer .columns .icon {
   }
   .service {
     grid-template-columns: repeat(1, auto);
-    gap: 0;
+    gap: 2rem;
+  }
+  #contact-details {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--accent-color-dark);
+  }
+  #contact-details .contact-data {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .columns.separator-small {
+    margin: 1rem 0rem;
+  }
+  footer img{
+    margin: 1rem 0;
   }
 }
