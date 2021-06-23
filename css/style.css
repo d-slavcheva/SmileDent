@@ -286,9 +286,7 @@ p {
 }
 
 #mainnav .main-menu li:hover > .sub-menu,
-#mainnav .main-menu li:focus > .sub-menu,
-.sub-menu > li:hover > .sub-menu2,
-.sub-menu > li:focus > .sub-menu2  {
+.sub-menu > li:hover > .sub-menu2 {
   display: block;
 }
 
@@ -797,7 +795,7 @@ footer .columns .icon {
     top: 36px;
   }
 
-  #mainnav .burger:hover > *, #mainnav .burger:focus > *  {
+  #mainnav .burger:hover > *{
     background-color: var(--accent-color);
   }
 
