@@ -243,6 +243,7 @@ p {
   flex-basis: 60%;
   list-style-type: none;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 #mainnav .main-menu li {
@@ -332,6 +333,8 @@ p {
 .carousel {
   position: relative;
   height: 60vh;
+  padding: 0 2.5rem;
+  /* background-color: var(--transperantgray-color); */
 }
 
 .carousel-button {
